@@ -15,7 +15,9 @@
     "cordis.patch.yml",
     "locale/*.json",
     "docs",
-    "icon.svg"
+    "icon.svg",
+    "assets/icon-180.png",
+    "screenshots.json"
   ],
   "keywords": [
     "dsh",
@@ -35,11 +37,15 @@
   "author": "zhang-astronaut",
   "license": "MIT",
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true,
-      "inject": ["@deepseek-ai/dsh-client-ui-sidebar"]
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
     }
   }
 }

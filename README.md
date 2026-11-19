@@ -1,3 +1,5 @@
+<img src="assets/icon-180.png" width="72" align="right" alt="OFM credit dock icon">
+
 # OFM credit dock
 
 > **Requires [Our Free Model](https://github.com/Ebony-Vinyl/dsh-our-free-model) (`dsh-our-free-model`).**

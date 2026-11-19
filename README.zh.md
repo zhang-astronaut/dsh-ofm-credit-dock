@@ -1,3 +1,5 @@
+<img src="assets/icon-180.png" width="72" align="right" alt="OFM 额度停靠条图标">
+
 # OFM 额度停靠条
 
 > **依赖 [Our Free Model](https://github.com/Ebony-Vinyl/dsh-our-free-model)（`dsh-our-free-model`）。**
