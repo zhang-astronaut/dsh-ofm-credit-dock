@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-label="A sidebar with the EAC credit dock open: four bound providers with remaining credit, the provider in use highlighted">
+  <defs>
+    <linearGradient id="previewPane" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#21242B"/>
+      <stop offset="1" stop-color="#191B21"/>
+    </linearGradient>
+    <linearGradient id="previewActive" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2B3A52"/>
+      <stop offset="1" stop-color="#2A3444"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Shell body -->
+  <rect x="0" y="0" width="640" height="300" fill="#15171C"/>
+
+  <!-- Conversation column: just enough to read as the main view -->
+  <g fill="#24272E">
+    <rect x="252" y="48" width="316" height="14" rx="7"/>
+    <rect x="252" y="74" width="252" height="10" rx="5" fill="#1F2228"/>
+    <rect x="252" y="94" width="288" height="10" rx="5" fill="#1F2228"/>
+    <rect x="252" y="114" width="196" height="10" rx="5" fill="#1F2228"/>
+  </g>
+  <rect x="252" y="150" width="200" height="60" rx="10" fill="#1D2027" stroke="#2C3038"/>
+
+  <!-- Sidebar column -->
+  <rect x="16" y="16" width="212" height="268" rx="12" fill="url(#previewPane)" stroke="#2E323B"/>
+
+  <!-- Brand row -->
+  <circle cx="42" cy="44" r="9" fill="#3ECFA0" fill-opacity="0.85"/>
+  <rect x="58" y="39" width="86" height="10" rx="5" fill="#3A3F49"/>
+
+  <!-- Navigation rows (inert) -->
+  <g fill="#2B2F37">
+    <rect x="32" y="72" width="180" height="20" rx="6"/>
+    <rect x="32" y="98" width="180" height="20" rx="6"/>
+    <rect x="32" y="124" width="180" height="20" rx="6"/>
+  </g>
+
+  <!-- ── The credit dock, at the bottom of the sidebar ── -->
+  <g>
+    <rect x="26" y="160" width="192" height="104" rx="9" fill="#1B1E24" stroke="#333845"/>
+
+    <!-- Header: chevron, title, provider count, refresh -->
+    <path d="M38 174.5 42.5 179 38 183.5" fill="none" stroke="#8D94A0" stroke-width="1.8"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="48" y="174" width="56" height="9" rx="4.5" fill="#9AA2AE"/>
+    <rect x="112" y="173" width="15" height="11" rx="5.5" fill="#2F343D" stroke="#3B414C" stroke-width="0.8"/>
+    <path d="M188 173.5a5 5 0 1 1-1.7-3.7" fill="none" stroke="#767C87" stroke-width="1.5"
+          stroke-linecap="round"/>
+    <path d="M188.4 168.6v3.2h-3.2" fill="none" stroke="#767C87" stroke-width="1.5"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Row 1: Qoder CN · 812.5 credits -->
+    <circle cx="42" cy="196" r="3" fill="#7A6CF0"/>
+    <rect x="50" y="192.5" width="52" height="7" rx="3.5" fill="#7C838F"/>
+    <rect x="150" y="192.5" width="32" height="7" rx="3.5" fill="#AEB5C0"/>
+    <rect x="186" y="193" width="20" height="6" rx="3" fill="#4A505B"/>
+
+    <!-- Row 2 (highlighted): TRAE · 40 credits, with the "in use" badge -->
+    <rect x="30" y="204" width="184" height="24" rx="8" fill="url(#previewActive)" stroke="#4A5C7C" stroke-width="1"/>
+    <circle cx="42" cy="216" r="3" fill="#00BFA6"/>
+    <rect x="50" y="212.5" width="34" height="7" rx="3.5" fill="#E4E7EC"/>
+    <rect x="88" y="211.5" width="26" height="10" rx="5" fill="#20242B" stroke="#4A5C7C" stroke-width="0.9"/>
+    <rect x="92" y="214.5" width="18" height="4" rx="2" fill="#8FA6C9"/>
+    <rect x="158" y="212.5" width="24" height="7" rx="3.5" fill="#F2F4F7"/>
+    <rect x="186" y="213" width="20" height="6" rx="3" fill="#5A6270"/>
+
+    <!-- Row 3: Gemini · 73.5 % -->
+    <circle cx="42" cy="239" r="3" fill="#4285F4"/>
+    <rect x="50" y="235.5" width="42" height="7" rx="3.5" fill="#7C838F"/>
+    <rect x="156" y="235.5" width="26" height="7" rx="3.5" fill="#AEB5C0"/>
+    <rect x="186" y="236" width="20" height="6" rx="3" fill="#4A505B"/>
+
+    <!-- Footer: "Updated just now" -->
+    <rect x="36" y="250" width="46" height="5" rx="2.5" fill="#3E444F"/>
+
+    <!-- Connector dot proving the highlighted row ties to the active model -->
+    <path d="M226 216h22" stroke="#4A5C7C" stroke-width="1.4" stroke-dasharray="3 3"/>
+    <circle cx="252" cy="216" r="3.5" fill="#00BFA6"/>
+  </g>
+
+  <!-- Settings row stays pinned at the very bottom, below the dock -->
+  <rect x="32" y="270" width="180" height="1" fill="#2A2E36"/>
+  <circle cx="42" cy="279" r="5.5" fill="none" stroke="#787F8B" stroke-width="1.4"/>
+  <rect x="52" y="276" width="42" height="6" rx="3" fill="#565D69"/>
+</svg>

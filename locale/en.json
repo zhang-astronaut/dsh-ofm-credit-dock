@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "OFM credit dock",
+    "description": "Lists every EAC router channel you have an account on, with its remaining credit, at the bottom of the sidebar — directly above Settings. The channel behind the model you are using is highlighted with an “In use” badge, and the numbers refresh every 90 seconds, when the window regains focus, and when Our Free Model reports a channel change. Expand or collapse it with the chevron; the refresh button re-reads immediately. Channel names and credits come from Our Free Model’s own channel RPC (`provider.status` then `credits.balances` per connected channel), the same reading its settings page shows, so it needs no configuration of its own and never reads a credential. Units are shown as each provider reports them — credits, tokens for ZCode, USD for Cline, percentages for Gemini’s quota windows — and a provider whose balance query fails shows the reason rather than 0. With the sidebar collapsed the dock becomes a single rail button whose tooltip summarizes the list. No channels are listed until an account is bound on Our Free Model’s “EAC router” page; if that plugin is absent or disabled, the dock says so instead of showing an empty panel. Turning this plugin off removes the dock and changes nothing else.",
+    "detail": "docs/DETAIL.md"
+  }
+}

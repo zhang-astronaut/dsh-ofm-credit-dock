@@ -1,0 +1,45 @@
+{
+  "name": "@zhang-astronaut/ofm-credit-dock",
+  "version": "1.0.0",
+  "description": "Our Free Model (EAC router) channel credits in the DSH sidebar: every connected provider with its remaining credit, the provider in use highlighted, refreshed live. Requires dsh-our-free-model.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "our-free-model",
+    "credits",
+    "sidebar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhang-astronaut/dsh-ofm-credit-dock.git"
+  },
+  "homepage": "https://github.com/zhang-astronaut/dsh-ofm-credit-dock",
+  "bugs": {
+    "url": "https://github.com/zhang-astronaut/dsh-ofm-credit-dock/issues"
+  },
+  "author": "zhang-astronaut",
+  "license": "MIT",
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-sidebar"]
+    }
+  }
+}

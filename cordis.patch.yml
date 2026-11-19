@@ -1,0 +1,6 @@
+# Host row for the OFM credit dock. The Host half owns no services: the browser
+# module reads the Our Free Model plugin's own JSON API and its
+# `/api/channel-pack` RPC, so there is nothing to register here.
+- insert:
+    - id: ofm-credit-dock
+      name: '@zhang-astronaut/ofm-credit-dock'
